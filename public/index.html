@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title >DreamflyChat</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+        <body>
+            <div class="wrapper">
+                <div class="banner">
+                    <h1>DreamflyChat</h1>
+                    <span class="status"></span>
+                </div>
+                
+                <div id="historyMsg">
+                    
+                </div>
+
+                <div class="controls">
+                    <div class="item">
+                        <input id="colorStyle" type="color" placeHolder="#000" title="字体颜色">
+                        <input id="emoji" type="button" value="表情" title="表情">
+                        <input id="clearBtn" type="button" value="清除聊天记录" title="清除聊天记录">
+                    </div>
+                    <textarea id="messageInput" placeHolder="回车发送消息"></textarea>
+                    <input id="sendBtn" type="button" value="发送">
+                    <div id="emojiWrapper"></div>
+                </div>
+            </div>
+
+            <div id="loginWrapper">
+                <p id="info">请输入您的昵称</p>
+                <div id="nickWrapper">
+                    <input type="text" placeHolder="您的昵称" id="nicknameinput">
+                    <input type="button" value="确定" id="loginBtn">
+                </div>
+            </div>
+            <script src="socket.io/socket.io.js"></script>
+            <script src="script/chat.js"></script>
+        </body>
+</html>
