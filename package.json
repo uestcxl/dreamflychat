@@ -1,0 +1,26 @@
+{
+  "name": "dreamflychat",
+  "version": "1.0.0",
+  "description": "a simple chat tool based on node.js and websocket",
+  "main": "index.js",
+  "dependencies": {
+    "socket.io": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:uestcxl/dreamflychat.git"
+  },
+  "keywords": [
+    "websocket"
+  ],
+  "author": "xl <865492652@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uestcxl/dreamflychat/issues"
+  },
+  "homepage": "https://github.com/uestcxl/dreamflychat"
+}
