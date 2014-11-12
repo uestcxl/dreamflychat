@@ -1,12 +1,27 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'epxress' ]
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'express-generator@4' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
 4 verbose node symlink /usr/bin/node
-5 warn package.json dreamflychat@1.0.0 No README data
-6 verbose readDependencies using package.json deps
-7 verbose cache add [ 'epxress', null ]
-8 verbose cache add name=undefined spec="epxress" args=["epxress",null]
+5 verbose cache add [ 'express-generator@4', null ]
+6 verbose cache add name=undefined spec="express-generator@4" args=["express-generator@4",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'express-generator@4',
+7 verbose parsed url   path: 'express-generator@4',
+7 verbose parsed url   href: 'express-generator@4' }
+8 verbose cache add name="express-generator" spec="4" args=["express-generator","4"]
 9 verbose parsed url { protocol: null,
 9 verbose parsed url   slashes: null,
 9 verbose parsed url   auth: null,
@@ -16,71 +31,146 @@
 9 verbose parsed url   hash: null,
 9 verbose parsed url   search: null,
 9 verbose parsed url   query: null,
-9 verbose parsed url   pathname: 'epxress',
-9 verbose parsed url   path: 'epxress',
-9 verbose parsed url   href: 'epxress' }
-10 silly lockFile a77f5afb-epxress epxress
-11 verbose lock epxress /home/xl/.npm/a77f5afb-epxress.lock
-12 silly lockFile a77f5afb-epxress epxress
-13 silly lockFile a77f5afb-epxress epxress
-14 verbose addNamed [ 'epxress', '' ]
-15 verbose addNamed [ null, '*' ]
-16 silly lockFile e06c22e2-epxress epxress@
-17 verbose lock epxress@ /home/xl/.npm/e06c22e2-epxress.lock
-18 silly addNameRange { name: 'epxress', range: '*', hasData: false }
-19 verbose request where is /epxress
-20 verbose request registry https://registry.npmjs.org/
-21 verbose request id 4a8f4cf23a76c26e
-22 verbose url raw /epxress
-23 verbose url resolving [ 'https://registry.npmjs.org/', './epxress' ]
-24 verbose url resolved https://registry.npmjs.org/epxress
-25 verbose request where is https://registry.npmjs.org/epxress
-26 info trying registry request attempt 1 at 19:55:09
-27 http GET https://registry.npmjs.org/epxress
-28 http 404 https://registry.npmjs.org/epxress
-29 verbose headers { date: 'Tue, 11 Nov 2014 11:55:10 GMT',
-29 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-29 verbose headers   'content-type': 'application/json',
-29 verbose headers   'cache-control': 'max-age=0',
-29 verbose headers   'content-length': '52',
-29 verbose headers   'accept-ranges': 'bytes',
-29 verbose headers   via: '1.1 varnish',
-29 verbose headers   age: '0',
-29 verbose headers   'x-served-by': 'cache-lax1433-LAX',
-29 verbose headers   'x-cache': 'MISS',
-29 verbose headers   'x-cache-hits': '0',
-29 verbose headers   'x-timer': 'S1415706910.864658,VS0,VE42',
-29 verbose headers   'keep-alive': 'timeout=10, max=50',
-29 verbose headers   connection: 'Keep-Alive' }
-30 silly registry.get cb [ 404,
-30 silly registry.get   { date: 'Tue, 11 Nov 2014 11:55:10 GMT',
-30 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-30 silly registry.get     'content-type': 'application/json',
-30 silly registry.get     'cache-control': 'max-age=0',
-30 silly registry.get     'content-length': '52',
-30 silly registry.get     'accept-ranges': 'bytes',
-30 silly registry.get     via: '1.1 varnish',
-30 silly registry.get     age: '0',
-30 silly registry.get     'x-served-by': 'cache-lax1433-LAX',
-30 silly registry.get     'x-cache': 'MISS',
-30 silly registry.get     'x-cache-hits': '0',
-30 silly registry.get     'x-timer': 'S1415706910.864658,VS0,VE42',
-30 silly registry.get     'keep-alive': 'timeout=10, max=50',
-30 silly registry.get     connection: 'Keep-Alive' } ]
-31 silly lockFile e06c22e2-epxress epxress@
-32 silly lockFile e06c22e2-epxress epxress@
-33 error 404 404 Not Found: epxress
-33 error 404
-33 error 404 'epxress' is not in the npm registry.
-33 error 404 You should bug the author to publish it
-33 error 404 It was specified as a dependency of 'dreamflychat'
-33 error 404
-33 error 404 Note that you can also install from a
-33 error 404 tarball, folder, or http url, or git url.
-34 error System Linux 3.13.0-32-generic
-35 error command "/usr/bin/node" "/usr/bin/npm" "install" "epxress"
-36 error cwd /home/xl/code/nodejs/dreamflychat
-37 error node -v v0.10.32
-38 error npm -v 1.4.28
-39 error code E404
-40 verbose exit [ 1, true ]
+9 verbose parsed url   pathname: '4',
+9 verbose parsed url   path: '4',
+9 verbose parsed url   href: '4' }
+10 verbose addNamed [ 'express-generator', '4' ]
+11 verbose addNamed [ null, '>=4.0.0-0 <5.0.0-0' ]
+12 silly lockFile 1cb3188f-express-generator-4 express-generator@4
+13 verbose lock express-generator@4 /home/xl/.npm/1cb3188f-express-generator-4.lock
+14 silly addNameRange { name: 'express-generator',
+14 silly addNameRange   range: '>=4.0.0-0 <5.0.0-0',
+14 silly addNameRange   hasData: false }
+15 verbose request where is /express-generator
+16 verbose request registry https://registry.npmjs.org/
+17 verbose request id f15d7d4ce0424dbe
+18 verbose url raw /express-generator
+19 verbose url resolving [ 'https://registry.npmjs.org/', './express-generator' ]
+20 verbose url resolved https://registry.npmjs.org/express-generator
+21 verbose request where is https://registry.npmjs.org/express-generator
+22 info trying registry request attempt 1 at 18:59:56
+23 http GET https://registry.npmjs.org/express-generator
+24 http 200 https://registry.npmjs.org/express-generator
+25 silly registry.get cb [ 200,
+25 silly registry.get   { date: 'Wed, 12 Nov 2014 10:59:57 GMT',
+25 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly registry.get     etag: '"D8MAOBCOVFO78JBUQNLK8DEX0"',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'cache-control': 'max-age=60',
+25 silly registry.get     'content-length': '12149',
+25 silly registry.get     'accept-ranges': 'bytes',
+25 silly registry.get     via: '1.1 varnish',
+25 silly registry.get     age: '0',
+25 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
+25 silly registry.get     'x-cache': 'HIT',
+25 silly registry.get     'x-cache-hits': '1',
+25 silly registry.get     'x-timer': 'S1415789997.215866,VS0,VE41',
+25 silly registry.get     vary: 'Accept',
+25 silly registry.get     'keep-alive': 'timeout=10, max=50',
+25 silly registry.get     connection: 'Keep-Alive' } ]
+26 silly addNameRange number 2 { name: 'express-generator',
+26 silly addNameRange   range: '>=4.0.0-0 <5.0.0-0',
+26 silly addNameRange   hasData: true }
+27 silly addNameRange versions [ 'express-generator',
+27 silly addNameRange   [ '1.0.0', '3.0.0', '4.0.0', '4.2.0', '4.8.0', '4.9.0' ] ]
+28 verbose addNamed [ 'express-generator', '4.9.0' ]
+29 verbose addNamed [ '4.9.0', '4.9.0' ]
+30 silly lockFile 0580e4a0-express-generator-4-9-0 express-generator@4.9.0
+31 verbose lock express-generator@4.9.0 /home/xl/.npm/0580e4a0-express-generator-4-9-0.lock
+32 silly lockFile 995b2f4d-ator-express-generator-4-9-0-tgz https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+33 verbose lock https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz /home/xl/.npm/995b2f4d-ator-express-generator-4-9-0-tgz.lock
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz',
+34 verbose addRemoteTarball   'f5da999d12ae4b072f6e61055633f7ad9e49fd73' ]
+35 info retry fetch attempt 1 at 18:59:57
+36 verbose fetch to= /tmp/npm-12487-D76SnUU_/registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+37 http GET https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+38 http 200 https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+39 silly lockFile 995b2f4d-ator-express-generator-4-9-0-tgz https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+40 silly lockFile 995b2f4d-ator-express-generator-4-9-0-tgz https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz
+41 silly lockFile 0580e4a0-express-generator-4-9-0 express-generator@4.9.0
+42 silly lockFile 0580e4a0-express-generator-4-9-0 express-generator@4.9.0
+43 silly lockFile 1cb3188f-express-generator-4 express-generator@4
+44 silly lockFile 1cb3188f-express-generator-4 express-generator@4
+45 silly resolved [ { name: 'express-generator',
+45 silly resolved     description: 'Express\' application generator',
+45 silly resolved     version: '4.9.0',
+45 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+45 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+45 silly resolved     keywords:
+45 silly resolved      [ 'express',
+45 silly resolved        'framework',
+45 silly resolved        'sinatra',
+45 silly resolved        'web',
+45 silly resolved        'rest',
+45 silly resolved        'restful',
+45 silly resolved        'router',
+45 silly resolved        'app',
+45 silly resolved        'api' ],
+45 silly resolved     repository: { type: 'git', url: 'https://github.com/expressjs/generator' },
+45 silly resolved     license: 'MIT',
+45 silly resolved     dependencies: { commander: '1.3.2', mkdirp: '0.5.0' },
+45 silly resolved     main: 'bin/express',
+45 silly resolved     preferGlobal: true,
+45 silly resolved     bin: { express: './bin/express' },
+45 silly resolved     devDependencies:
+45 silly resolved      { mocha: '~1.21.4',
+45 silly resolved        rimraf: '~2.2.8',
+45 silly resolved        should: '~4.0.4',
+45 silly resolved        supertest: '~0.13.0' },
+45 silly resolved     engines: { node: '>= 0.8.0' },
+45 silly resolved     files: [ 'LICENSE', 'bin/', 'templates/' ],
+45 silly resolved     scripts:
+45 silly resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+45 silly resolved        'test-travis': 'mocha --reporter spec --bail --check-leaks test/' },
+45 silly resolved     gitHead: 'd00f7fc2c9e3a1f22f740019bab64fc0f579146d',
+45 silly resolved     bugs: { url: 'https://github.com/expressjs/generator/issues' },
+45 silly resolved     homepage: 'https://github.com/expressjs/generator',
+45 silly resolved     _id: 'express-generator@4.9.0',
+45 silly resolved     _shasum: 'f5da999d12ae4b072f6e61055633f7ad9e49fd73',
+45 silly resolved     _from: 'express-generator@4',
+45 silly resolved     _npmVersion: '1.4.21',
+45 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+45 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+45 silly resolved     dist:
+45 silly resolved      { shasum: 'f5da999d12ae4b072f6e61055633f7ad9e49fd73',
+45 silly resolved        tarball: 'http://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz' },
+45 silly resolved     directories: {},
+45 silly resolved     _resolved: 'https://registry.npmjs.org/express-generator/-/express-generator-4.9.0.tgz' } ]
+46 info install express-generator@4.9.0 into /usr/lib
+47 info installOne express-generator@4.9.0
+48 verbose lib/node_modules/express-generator unbuild
+49 verbose tar unpack /home/xl/.npm/express-generator/4.9.0/package.tgz
+50 silly lockFile 73f1f6cd-b-node-modules-express-generator tar:///usr/lib/node_modules/express-generator
+51 verbose lock tar:///usr/lib/node_modules/express-generator /home/xl/.npm/73f1f6cd-b-node-modules-express-generator.lock
+52 silly lockFile 271e22b8-ress-generator-4-9-0-package-tgz tar:///home/xl/.npm/express-generator/4.9.0/package.tgz
+53 verbose lock tar:///home/xl/.npm/express-generator/4.9.0/package.tgz /home/xl/.npm/271e22b8-ress-generator-4-9-0-package-tgz.lock
+54 silly gunzTarPerm modes [ '775', '664' ]
+55 error Error: EACCES, mkdir '/usr/lib/node_modules/express-generator'
+55 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/express-generator']
+55 error   errno: 3,
+55 error   code: 'EACCES',
+55 error   path: '/usr/lib/node_modules/express-generator',
+55 error   fstream_type: 'Directory',
+55 error   fstream_path: '/usr/lib/node_modules/express-generator',
+55 error   fstream_class: 'DirWriter',
+55 error   fstream_stack:
+55 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+55 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+55 error      'Object.oncomplete (fs.js:107:15)' ] }
+56 error Please try running this command again as root/Administrator.
+57 error System Linux 3.13.0-32-generic
+58 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "express-generator@4"
+59 error cwd /home/xl/code/nodejs/dreamflychat
+60 error node -v v0.10.32
+61 error npm -v 1.4.28
+62 error path /usr/lib/node_modules/express-generator
+63 error fstream_path /usr/lib/node_modules/express-generator
+64 error fstream_type Directory
+65 error fstream_class DirWriter
+66 error code EACCES
+67 error errno 3
+68 error stack Error: EACCES, mkdir '/usr/lib/node_modules/express-generator'
+69 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+69 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+69 error fstream_stack Object.oncomplete (fs.js:107:15)
+70 verbose exit [ 3, true ]
