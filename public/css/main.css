@@ -34,7 +34,6 @@ html, body {
     letter-spacing:2px;
 }
 input{
-    box-shadow:5px 5px 5px #999 inset; 
     border-radius:10px;
 }
 #nickWrapper {
@@ -86,8 +85,11 @@ h1{
 #userOnline h3{
     display:block;
 }
+.me{
+    float:right;
+}
 .timespan {
-    color: #ddd;
+    color: #000;
 }
 .items {
     height: 30px;
@@ -95,7 +97,7 @@ h1{
 #colorStyle {
     width: 50px;
     border: none;
-    padding: 0;
+    padding: 4px;
 }
 /*custom the file input*/
 
