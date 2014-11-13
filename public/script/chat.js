@@ -139,8 +139,9 @@ Chat.prototype={
         var time=new Date();
         onemessage.style.color=color||"#000";
         if(me===1){
-            onemessage.innerHTML=this.showEmoji(msg)+"<span class='timespan'> "+user+"</span>"+time.getHours()+":"+time.getMinutes()+":"+time.getSeconds();
-            onemessage.className="me";
+            //onemessage.innerHTML=this.showEmoji(msg)+"<span class='timespan'> "+user+"</span>"+time.getHours()+":"+time.getMinutes()+":"+time.getSeconds();
+            //onemessage.className="me";
+            onemessage.innerHTML=time.getHours()+":"+time.getMinutes()+":"+time.getSeconds()+"<span class='timespan'> "+user+"说 </span>"+this.showEmoji(msg);
         }else{
             onemessage.innerHTML=time.getHours()+":"+time.getMinutes()+":"+time.getSeconds()+"<span class='timespan'> "+user+"说 </span>"+this.showEmoji(msg);
         }
