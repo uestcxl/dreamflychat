@@ -11,16 +11,22 @@
                     <span class="status"></span>
                 </div>
                 
-                <div id="historyMsg">
-                    
+                <div id="chatCenter">
+                    <div id="historyMsg">
+                        
+                    </div>
+                    <h3>在线用户:(<span id="count"></span>)</h3>
+                    <div id="userOnline">
+                    </div>
                 </div>
 
                 <div class="controls">
-                    <div class="item">
+                <!--    <div class="item">
                         <input id="colorStyle" type="color" placeHolder="#000" title="字体颜色">
                         <input id="emoji" type="button" value="表情" title="表情">
                         <input id="clearBtn" type="button" value="清除聊天记录" title="清除聊天记录">
                     </div>
+                i--!>
                     <textarea id="messageInput" placeHolder="回车发送消息"></textarea>
                     <input id="sendBtn" type="button" value="发送">
                     <div id="emojiWrapper"></div>
@@ -28,7 +34,8 @@
             </div>
 
             <div id="loginWrapper">
-                <p id="info">正在连接服务器，请稍候------------------------------------</p>
+                <p id="titleContent">欢迎来到DreamflyChat</p>
+                <p id="info">正在连接服务器，请稍候</p>
                 <div id="nickWrapper">
                     <input type="text" placeHolder="您的昵称" id="nicknameinput">
                     <input type="button" value="确定" id="loginBtn">

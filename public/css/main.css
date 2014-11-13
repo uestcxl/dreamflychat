@@ -4,7 +4,7 @@ html, body {
     font-family: sans-serif;
 }
 .wrapper {
-    width: 500px;
+    width: 750px;
     height: 640px;
     padding: 5px;
     margin: 0 auto;
@@ -16,20 +16,40 @@ html, body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(5, 5, 5, .6);
+    background-color:rgba(0,0,0,1);
     text-align: center;
     color: #fff;
     display: block;
     padding-top: 200px;
 }
+#info{
+    font-size:45px;
+    letter-spacing:10px;
+}
+#nicknameinput{
+    padding-left:5px;
+    border:0px;
+}
+#titleContent{
+    letter-spacing:2px;
+}
+input{
+    box-shadow:5px 5px 5px #999 inset; 
+    border-radius:10px;
+}
 #nickWrapper {
     display: none;
 }
+h1{
+    margin:0 270px
+}
 .banner {
+    margin:0 auto;
     height: 80px;
     width: 100%;
 }
 .banner p {
+    margin:0 auto;
     float: left;
     display: inline-block;
 }
@@ -37,15 +57,34 @@ html, body {
     height: 100px;
     margin: 5px 0px;
     position: relative;
+    float:left;
 }
 #historyMsg {
     height: 400px;
     background-color: #fff;
     overflow: auto;
     padding: 2px;
+    float:left;
+    width:615px;
 }
 #historyMsg img {
     max-width: 99%;
+}
+#userOnline{
+    float:left;
+    overflow:auto;
+    height:360px;
+    margin:2px;
+    width:125px;
+    margin:0 auto;
+}
+#userOnline p{
+    display:block;
+    margin:0 auto;
+    text-align:center;
+}
+#userOnline h3{
+    display:block;
 }
 .timespan {
     color: #ddd;
@@ -73,14 +112,14 @@ html, body {
 /*end custom file input*/
 
 #messageInput {
-    width: 440px;
-    max-width: 440px;
+    width: 620px;
+    max-width: 620px;
     height: 90px;
     max-height: 90px;
 }
 #sendBtn {
-    width: 50px;
-    height: 96px;
+    width: 105px;
+    height: 91px;
     float: right;
 }
 #emojiWrapper {

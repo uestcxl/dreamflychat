@@ -21,8 +21,17 @@ io.on("connection",function(socket){
             users.push(nickname);
             socket.emit('loginSuccess');
             //向所有连接用户发送此函数
-            io.socket.emit("system",nickname);
+            io.sockets.emit("system",nickname,users.length,'login',users);
+            console.log(users);
         }
-        console.log(nickname);
+    });
+    socket.on("disconnect",function(){
+        users.splice(socket.userIndex,1);
+        if(socket.nickname!==null){
+            socket.broadcast.emit('system',socket.nickname,users.length,'logout',users);
+        }
+    });
+    socket.on('post',function(content){
+        socket.broadcast.emit('newMessage',socket.nickname,content);
     });
 });
