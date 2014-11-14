@@ -31,7 +31,7 @@ io.on("connection",function(socket){
             socket.broadcast.emit('system',socket.nickname,users.length,'logout',users);
         }
     });
-    socket.on('post',function(content){
-        socket.broadcast.emit('newMessage',socket.nickname,content);
+    socket.on('post',function(content,color){
+        socket.broadcast.emit('newMessage',socket.nickname,content,color);
     });
 });

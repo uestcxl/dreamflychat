@@ -147,5 +147,14 @@ h1{
     display: inline;
 }
 footer {
+    margin-top:10px;
     text-align: center;
+}
+a:link{
+    color:#ddd;
+    text-decoration:none;
+}
+a:hover{
+    color:blue;
+    text-decoration:none;
 }
